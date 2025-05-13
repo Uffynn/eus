@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUS Kulturcentrum</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">EUS Kulturcentrum</h1>
+    <div class="language-toggle">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('hu')">Magyar</button>
+    </div>
+    <button id="theme-toggle" onclick="toggleTheme()">🌞</button>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="welcome"></h2>
+      <p id="description"></p>
+    </section>
+
+    <section id="calendar">
+      <h2 id="calendar-title"></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Calendar Rows -->
+          <tr>
+            <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+          </tr>
+          <tr>
+            <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
